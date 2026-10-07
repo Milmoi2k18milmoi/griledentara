@@ -42,11 +42,7 @@
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
   }
-  .start-screen .tooth {
-    font-size: 80px;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
-  }
+  .start-screen .tooth { font-size: 80px; margin-bottom: 20px; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)); }
   .start-screen h1 { font-size: 1.7em; margin-bottom: 10px; font-weight: 700; }
   .start-screen p { opacity: 0.9; margin-bottom: 30px; font-size: 1em; line-height: 1.6; }
   .start-screen .info-box {
@@ -112,17 +108,8 @@
   .stat.wrong .num { color: #dc3545; }
 
   /* PROGRESS */
-  .progress-bar {
-    height: 5px;
-    background: #e0e0e0;
-    overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    transition: width 0.4s ease;
-    width: 0%;
-  }
+  .progress-bar { height: 5px; background: #e0e0e0; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); transition: width 0.4s ease; width: 0%; }
 
   /* CONTENT */
   .content { padding: 20px; flex: 1; }
@@ -135,22 +122,8 @@
     gap: 10px;
     flex-wrap: wrap;
   }
-  .question-number {
-    background: #667eea;
-    color: #fff;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.8em;
-    font-weight: 700;
-  }
-  .question-category {
-    font-size: 0.75em;
-    color: #764ba2;
-    font-weight: 600;
-    background: #f0eaff;
-    padding: 6px 12px;
-    border-radius: 20px;
-  }
+  .question-number { background: #667eea; color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 0.8em; font-weight: 700; }
+  .question-category { font-size: 0.75em; color: #764ba2; font-weight: 600; background: #f0eaff; padding: 6px 12px; border-radius: 20px; }
 
   .question-text {
     font-size: 1.05em;
@@ -194,30 +167,14 @@
     font-size: 0.95em;
     transition: all 0.2s;
   }
-  .option.correct {
-    border-color: #28a745;
-    background: #d4edda;
-    animation: pulse 0.4s ease;
-  }
+  .option.correct { border-color: #28a745; background: #d4edda; animation: pulse 0.4s ease; }
   .option.correct .letter { background: #28a745; color: #fff; }
-  .option.wrong {
-    border-color: #dc3545;
-    background: #f8d7da;
-    animation: shake 0.4s ease;
-  }
+  .option.wrong { border-color: #dc3545; background: #f8d7da; animation: shake 0.4s ease; }
   .option.wrong .letter { background: #dc3545; color: #fff; }
   .option.disabled { cursor: default; }
-  .option.correct.disabled, .option.wrong.disabled { opacity: 1; }
 
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-  }
-  @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-6px); }
-    75% { transform: translateX(6px); }
-  }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } }
+  @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
 
   /* FEEDBACK */
   .feedback {
@@ -258,7 +215,6 @@
   }
   .nav-btn:active { transform: scale(0.97); }
   .nav-btn:disabled { background: #e0e0e0; color: #999; cursor: not-allowed; }
-  .nav-btn.ghost { background: #f0f0f0; color: #555; }
 
   /* RESULTS */
   .results {
@@ -325,30 +281,10 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     border-left: 4px solid #dc3545;
   }
-  .review-item.correct-item {
-    border-left-color: #28a745;
-  }
-  .review-item .q-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 8px;
-  }
-  .review-item .q-num {
-    font-size: 0.75em;
-    font-weight: 700;
-    color: #667eea;
-    background: #f0eaff;
-    padding: 4px 10px;
-    border-radius: 12px;
-  }
-  .review-item .q-status {
-    font-size: 0.75em;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 12px;
-  }
+  .review-item.correct-item { border-left-color: #28a745; }
+  .review-item .q-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; gap: 8px; }
+  .review-item .q-num { font-size: 0.75em; font-weight: 700; color: #667eea; background: #f0eaff; padding: 4px 10px; border-radius: 12px; }
+  .review-item .q-status { font-size: 0.75em; font-weight: 700; padding: 4px 10px; border-radius: 12px; }
   .review-item .q-status.ok { background: #d4edda; color: #155724; }
   .review-item .q-status.bad { background: #f8d7da; color: #721c24; }
   .review-item .q { font-weight: 600; font-size: 0.95em; margin-bottom: 12px; color: #222; line-height: 1.4; }
@@ -361,7 +297,6 @@
 <body>
 <div class="container" id="app">
 
-  <!-- START SCREEN -->
   <div class="start-screen" id="startScreen">
     <div class="tooth">🦷</div>
     <h1>Grile Morfologie Dentară</h1>
@@ -370,14 +305,11 @@
       extrase dintr-o bancă de <strong>100 de grile</strong><br>
       din cursurile 1-10 · Dr. Mihai DAVID
     </div>
-    <button class="btn" onclick="startQuiz()">Începe Testul</button>
+    <button class="btn" id="btnStart">Începe Testul</button>
   </div>
 
-  <!-- QUIZ SCREEN -->
   <div id="quizScreen" class="hidden" style="display:flex;flex-direction:column;min-height:100vh;">
-    <header>
-      <h1>🦷 Grile Morfologie Dentară</h1>
-    </header>
+    <header><h1>🦷 Grile Morfologie Dentară</h1></header>
     <div class="stats-bar">
       <div class="stat correct"><div class="num" id="statCorrect">0</div><div class="lbl">Corecte</div></div>
       <div class="stat wrong"><div class="num" id="statWrong">0</div><div class="lbl">Greșite</div></div>
@@ -396,11 +328,10 @@
     </div>
 
     <div class="nav-buttons">
-      <button class="nav-btn" id="btnNext" onclick="nextQuestion()" disabled>Următoarea →</button>
+      <button class="nav-btn" id="btnNext" disabled>Următoarea →</button>
     </div>
   </div>
 
-  <!-- RESULTS SCREEN -->
   <div class="results hidden" id="resultsScreen">
     <div class="emoji" id="resEmoji">🎉</div>
     <h2 id="resTitle">Test Finalizat!</h2>
@@ -411,11 +342,10 @@
       <div class="detail-row"><span>❌ Greșite</span><span id="resWrong" style="color:#dc3545;">0</span></div>
       <div class="detail-row"><span>📊 Total</span><span id="resTotal">10</span></div>
     </div>
-    <button class="btn primary" style="width:100%;max-width:340px;" onclick="showReview()">📋 Vezi toate răspunsurile</button>
-    <button class="btn" style="background:#f0f0f0;color:#555;width:100%;max-width:340px;" onclick="restartQuiz()">🔄 Reia testul</button>
+    <button class="btn primary" style="width:100%;max-width:340px;" id="btnReview">📋 Vezi toate răspunsurile</button>
+    <button class="btn" style="background:#f0f0f0;color:#555;width:100%;max-width:340px;" id="btnRestart1">🔄 Reia testul</button>
   </div>
 
-  <!-- REVIEW SCREEN -->
   <div class="hidden" id="reviewScreen" style="min-height:100vh;background:#f8f9fa;">
     <div class="review-header">
       <h1>📋 Rezumat Răspunsuri</h1>
@@ -423,7 +353,7 @@
     </div>
     <div class="review-list" id="reviewList"></div>
     <div style="padding:15px 20px 40px;">
-      <button class="btn primary" style="width:100%;" onclick="restartQuiz()">🔄 Reia testul</button>
+      <button class="btn primary" style="width:100%;" id="btnRestart2">🔄 Reia testul</button>
     </div>
   </div>
 
@@ -432,10 +362,10 @@
 <script>
 // ============================================================
 // BANCA DE ÎNTREBĂRI - 100 grile
-// c = categorie (curs), q = întrebare, o = opțiuni, a = index răspuns corect
+// c = curs, q = întrebare, o = opțiuni, a = index răspuns corect (0-3)
 // ============================================================
 const QUESTIONS = [
-  // CURS 1 - TERMINOLOGIE (10)
+  // CURS 1
   { c: "Curs 1", q: "Care din următoarele NU face parte din funcțiile aparatului dento-maxilar?", o: ["Masticația", "Deglutiția", "Respirația", "Fonația"], a: 2 },
   { c: "Curs 1", q: "Câți dinți are dentiția temporară?", o: ["32", "20", "28", "24"], a: 1 },
   { c: "Curs 1", q: "Formula dentară definitivă pe o hemiarcadă este:", o: ["2 incisivi, 1 canin, 2 premolari, 2 molari", "2 incisivi, 1 canin, 2 premolari, 3 molari", "2 incisivi, 1 canin, 3 premolari, 2 molari", "2 incisivi, 2 canini, 2 premolari, 2 molari"], a: 1 },
@@ -447,7 +377,7 @@ const QUESTIONS = [
   { c: "Curs 1", q: "Dinții frontali sunt:", o: ["Incisivii și caninii", "Premolarii și molarii", "Doar incisivii", "Doar caninii"], a: 0 },
   { c: "Curs 1", q: "Coroana clinică reprezintă:", o: ["Doar porțiunea acoperită de smalț", "Porțiunea vizibilă în cavitatea bucală", "Porțiunea intraalveolară", "Vârful rădăcinii"], a: 1 },
 
-  // CURS 2 - ȚESUTURI (15)
+  // CURS 2
   { c: "Curs 2", q: "Care este cel mai dur țesut din organism?", o: ["Dentina", "Cementul", "Smalțul", "Osul"], a: 2 },
   { c: "Curs 2", q: "Smalțul este compus din:", o: ["95% calcium hidroxiapatită, 4% apă, 1% substanțe organice", "70% calcium hidroxiapatită, 12% apă, 18% organice", "65% calcium hidroxiapatită, 12% apă, 23% organice", "50% calcium hidroxiapatită, 25% apă, 25% organice"], a: 0 },
   { c: "Curs 2", q: "Celula specifică pulpei dentare este:", o: ["Ameloblastul", "Odontoblastul", "Cementoblastul", "Osteoblastul"], a: 1 },
@@ -464,7 +394,7 @@ const QUESTIONS = [
   { c: "Curs 2", q: "Pulpa dentară provine din:", o: ["Ectoderm", "Mezoderm", "Endoderm", "Neuroectoderm"], a: 1 },
   { c: "Curs 2", q: "Smalțul provine din:", o: ["Mezoderm", "Ectoderm", "Endoderm", "Mezenchim"], a: 1 },
 
-  // CURS 3 - SISTEME DE NOTARE (10)
+  // CURS 3
   { c: "Curs 3", q: "În sistemul FDI, incisivul central superior drept este notat:", o: ["1.1", "2.1", "1.2", "4.1"], a: 0 },
   { c: "Curs 3", q: "În sistemul FDI, molarul 1 inferior stâng este notat:", o: ["3.6", "4.6", "2.6", "1.6"], a: 0 },
   { c: "Curs 3", q: "În sistemul francez, incisivul central superior drept este notat:", o: ["D1", "S1", "d1", "+1"], a: 0 },
@@ -476,7 +406,7 @@ const QUESTIONS = [
   { c: "Curs 3", q: "În sistemul francez, molarul de minte inferior drept este notat:", o: ["d8", "D8", "s8", "S8"], a: 0 },
   { c: "Curs 3", q: "Câte elemente comune au toate sistemele de notare?", o: ["2", "3", "4", "5"], a: 2 },
 
-  // CURS 4 - FRONTAL MAXILAR (15)
+  // CURS 4
   { c: "Curs 4", q: "Incisivul central maxilar erupe la vârsta de:", o: ["6 ani", "7 ani și 6 luni", "8 ani", "9 ani"], a: 1 },
   { c: "Curs 4", q: "Care este cel mai voluminos incisiv?", o: ["Incisivul central inferior", "Incisivul lateral superior", "Incisivul central superior", "Incisivul lateral inferior"], a: 2 },
   { c: "Curs 4", q: "Cingulumul este:", o: ["O creastă vestibulară", "O formațiune hemisferică pe fața palatinală", "Marginea incizală", "Un șanț interlobular"], a: 1 },
@@ -491,4 +421,10 @@ const QUESTIONS = [
   { c: "Curs 4", q: "Rădăcina incisivului central superior pe secțiune are forma:", o: ["Circulară", "Triunghiulară", "Ovală", "Pătrată"], a: 1 },
   { c: "Curs 4", q: "Caninul superior se implantează cu axul înclinat spre palatinal:", o: ["2-3°", "5-7°", "10-12°", "15°"], a: 1 },
   { c: "Curs 4", q: "Incisivul lateral superior are culoarea repartizată pe:", o: ["2 zone egale", "3 zone inegale", "4 zone", "Uniform"], a: 1 },
-  { c: "Curs 4", q: "Cea mai redusă implantare de pe arcada maxilară o are:", o: ["Incisivul central superior", "Incisivul lateral superior", "Caninul superior", "Prem
+  { c: "Curs 4", q: "Cea mai redusă implantare de pe arcada maxilară o are:", o: ["Incisivul central superior", "Incisivul lateral superior", "Caninul superior", "Premolarul 1 superior"], a: 1 },
+
+  // CURS 5
+  { c: "Curs 5", q: "Incisivul central inferior erupe la vârsta de:", o: ["5 ani", "6 ani", "7 ani", "8 ani"], a: 1 },
+  { c: "Curs 5", q: "Incisivul central inferior are:", o: ["Cel mai mare volum dintre toți dinții", "Cel mai redus volum dintre toți dinții", "Volum egal cu incisivul lateral", "Volum mai mare decât caninul"], a: 1 },
+  { c: "Curs 5", q: "Caninul mandibular erupe la vârsta de:", o: ["7 ani", "8 ani", "9 ani", "10 ani"], a: 2 },
+  { c: "C
