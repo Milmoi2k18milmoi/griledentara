@@ -54,7 +54,7 @@ header h1{font-size:1.05em;font-weight:600}
 .feedback.ok{background:#d4edda;border-left:4px solid #28a745;color:#155724}
 .feedback.bad{background:#f8d7da;border-left:4px solid #dc3545;color:#721c24}
 .feedback strong{display:block;margin-bottom:4px}
-.nav-buttons{display:flex;gap:10px;padding:15px 20px 25px;background:#fff;border-top:1px solid #eee}
+.nav-buttons{display:flex;gap:10px;padding: 15px 20px calc(25px + env(safe-area-inset-bottom)) 20px;;background:#fff;border-top:1px solid #eee}
 .nav-btn{flex:1;padding:14px;border-radius:12px;border:none;font-size:.95em;font-weight:700;cursor:pointer;background:#667eea;color:#fff;transition:all .2s}
 .nav-btn:active{transform:scale(.97)}
 .nav-btn:disabled{background:#e0e0e0;color:#999;cursor:not-allowed}
